@@ -1,6 +1,9 @@
 variable "instance_typ" {
-    type = list
-    default = ["t1.micro", "t2.micro"]
+    type = map
+    default = {
+        dev = "t1.micro"
+        prod = "t2.micro"
+    }
 }
 
 variable "instance_name" {
