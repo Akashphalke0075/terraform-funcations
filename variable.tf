@@ -17,5 +17,6 @@ variable "ami_name" {
 
     validation {
         condition = length(var.ami_name)>4 && susbtr("var.ami_name",0 , 4) == "ami-"
+        error_message = "write proper ami name"
     }
 }
