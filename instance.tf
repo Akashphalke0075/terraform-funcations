@@ -1,5 +1,5 @@
 resource "aws_instance" "class-server-pp" {
-    instance_type = var.instance_typ["1"]
+    instance_type = var.instance_typ
     ami = var.ami_name
     # vpc_security_group_ids = [aws_security_group.class-security.id]
     # depends_on = [aws_security_group.class-security]
