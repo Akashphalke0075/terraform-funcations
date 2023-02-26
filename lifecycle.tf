@@ -13,6 +13,10 @@ resource "aws_instance" "class-server-LL" {
     #     ]
     # }
 
+    lifecycle {
+        prevent_destroy = "true"
+    }
+
 
     tags = {
         Name = "akash"
