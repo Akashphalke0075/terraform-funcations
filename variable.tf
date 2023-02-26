@@ -7,7 +7,7 @@
 #     }
 # }
 variable "instance_typ" {
-    default = ["t2.micro"]
+    default = ["t2.micro", "t1.micro"]
 
     validation {
         condition = contains(["t1.micro", "t2.micro", "t3.small"] , var.instance_typ)
