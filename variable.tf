@@ -10,7 +10,7 @@ variable "instance_typ" {
     default = "t2.micro"
 
     validation {
-        condition = contains(["t1.micro", "t2.micro", "t3.small"],var.instance_typ)
+        condition = contains(["t1.micro", "t2.micro", "t3.small"] , var.instance_typ)
         error_message = "only free allowed"
     }
 }
