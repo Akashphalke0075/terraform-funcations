@@ -7,3 +7,4 @@ resource "aws_instance" "class-server-pp" {
  tags = {
  Name = "akash-server"
 }
+}
