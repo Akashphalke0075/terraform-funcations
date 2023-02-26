@@ -7,11 +7,11 @@ resource "aws_instance" "class-server-LL" {
     #     create_before_destroy = "true"
     # }
 
-    lifecycle {
-        ignore_changes = [
-            tags
-        ]
-    }
+    # lifecycle {
+    #     ignore_changes = [
+    #         tags
+    #     ]
+    # }
 
 
     tags = {
