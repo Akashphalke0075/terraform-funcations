@@ -3,6 +3,7 @@ variable "instance_typ" {
     default = {
         dev = "t1.micro"
         prod = "t2.micro"
+        test = "t3.large"
     }
 }
 
