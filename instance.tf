@@ -6,6 +6,6 @@ resource "aws_instance" "class-server-pp" {
     count = 2
 
  tags = {
- Name = "akash-server"
+ Name = "akash-server(count.index)"
 }
 }
