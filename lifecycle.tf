@@ -3,9 +3,16 @@ resource "aws_instance" "class-server-LL" {
     ami = "ami-0b93ce03dcbcb10f6"
     availability_zone = "us-east-1a"
 
+    # lifecycle {
+    #     create_before_destroy = "true"
+    # }
+
     lifecycle {
-        create_before_destroy = "true"
+        ignore_changes = [
+            tags
+        ]
     }
+
 
     tags = {
         Name = "akash"
