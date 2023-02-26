@@ -1,5 +1,6 @@
 variable "instance_typ" {
-    default = "t1.micro"
+    type = list
+    default = ["t1.micro", "t2.micro"]
 }
 
 variable "instance_name" {
