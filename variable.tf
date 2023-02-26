@@ -14,4 +14,8 @@ variable "instance_name" {
 
 variable "ami_name" {
     default = "ami-0b93ce03dcbcb10f6"
+
+    validation {
+        condition = length(var.ami_name)>4 && susbtr("var.ami_name",0 , 4) == "ami-"
+    }
 }
