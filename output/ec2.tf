@@ -1,5 +1,5 @@
 resource "aws_instance" "class-ec2-server" {
-  instance_type          = var.instance_typ
+  instance_type         = var.instance_typ
   ami                    = var.ami_name
 
   user_data              = <<-EOF
