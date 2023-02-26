@@ -10,3 +10,7 @@ resource "aws_instance" "class-ec2-server" {
         EOF
 
 }
+
+output "ec2-dns" {
+    value = "http://${aws_instance.class-ec2-server.public_dns}"
+}
