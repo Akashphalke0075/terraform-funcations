@@ -10,10 +10,10 @@ resource "aws_instance" "class-server-pp" {
 }
 }
 
-resource "aws_instance" "class-server-pp" {
+resource "aws_instance" "class-server-ee" {
     instance_type = "t2.micro"
     ami = "ami-06e0ce9d3339cb039"
-    provider = "aws.eu-west-1"
+    provider = "aws.aws.eu-west-1"
  tags = {
     Name = "europe-inst"
  }
